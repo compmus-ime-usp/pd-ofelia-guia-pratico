@@ -2,6 +2,9 @@
 
 \usepackage{listings}
 
+\usepackage{parskip}
+\setlength{\parskip}{0pt}
+
 \title{Explicando Pd-Ofelia}
 \author{Haruo}
 \date{}
@@ -10,6 +13,22 @@
 
 \maketitle
 
+\section{Scripts \texttt{.lua}}
 
+A biblioteca Ofelia registra automaticamente funções nomeadas como \texttt{ofelia.*} para serem usadas como \textbf{manipuladores de mensagens} no Pure Data.
+Por exemplo:
+
+Defina uma função \texttt{ofelia.minhaMensagem()} em seu script Ofelia e associe a um objeto Pure Data. 
+
+\subsection{\texttt{ofelia.perform()}}
+
+Defina uma função \texttt{ofelia.perform()} para ser executada a cada ciclo DSP.
+
+\subsection{A variável global \texttt{M}}
+
+Imagine que você esteja escrevendo um script em Lua que será associado a um objeto do Pure Data.
+Seria interessante guardar variáveis globais dentro desse script.
+
+A variável global \texttt{M} é fornecida pelo Ofelia para o usuário armazenar e organizar configurações, variáveis e estados que necessitem ser persistentes dentro de um script Lua associado a um objeto do Pure Data.
 
 \end{document}
