@@ -1,17 +1,21 @@
-function ofelia.minhaMensagem();
-print('Executei a funcao minhaMensagem!');
-end;
+function ofelia.minhaMensagem()
+  print('Executei a funcao minhaMensagem!')
+end
 
-function M.bang();
-print('Executei a funcao ao ativar o bang!');
-end;
+function ofelia.bang()
+  print('Executei a funcao ao ativar o bang!')
+end
 
-function M.list(l);
-for i=1, #l do;
-print('Executei a funcao ao ativar a lista: ' .. l[i]);
-end;
-end;
+function ofelia.list(lista)
+  print('Executei a funcao ao enviar uma lista de valores!')
+  for i=1, #lista do
+    print('Valor ' .. i .. ' da lista: ' .. lista[i])
+  end
+end
 
-function M.float(f);
-print('Executei a funcao ao ativar o float com o valor ' .. f);
-end;
+function ofelia.perform(bloco)
+  for i=1, 64 do
+    bloco[i] = 2*math.random() - 1
+  end
+  return bloco
+end
