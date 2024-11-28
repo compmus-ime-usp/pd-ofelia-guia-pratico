@@ -106,6 +106,18 @@ Para acessar um elemento da lista, use o índice do elemento entre colchetes.
   \end{lstlisting}
 \end{center}
 
+Listas em Ofelia devem ser inicializadas com a sintaxe \texttt{ofTable()}.
+
+\begin{center}
+  \begin{lstlisting}
+  local lista = ofTable()
+  lista[1] = 10
+  lista[2] = 20
+  lista[3] = 30
+  print('Primeiro elemento da lista: ' .. lista[1])
+  \end{lstlisting}
+\end{center}
+
 \subsection{Laços}
 
 Laços em Lua são definidos com as palavras-chave \texttt{for}, \texttt{do} e \texttt{end}.
