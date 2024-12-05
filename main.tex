@@ -244,6 +244,12 @@ Vamos preencher o bloco de amostras com um ruído branco. Para isso, adicione a 
 
 Abaixe o volume! Pois ao conectar o objeto \texttt{ofelia define -s11} a um objeto \texttt{dac\textasciitilde}, um ruído branco será reproduzido.
 
+\subsubsection{Observações}
+
+\begin{itemize}
+  \item Evite usar a função \texttt{print()} dentro da função \texttt{ofelia.perform()}, pois o uso introduz pausas na saída de som.
+\end{itemize}
+
 % \section{O módulo \texttt{M}}
 % % "M" is the name of a module table that exists in each "ofelia define" object which includes built-in functions such as "M.bang()" function. You can add any variables or functions to the module.
 % % Perceba que não definimos \texttt{M} em lugar algum em nosso script.
